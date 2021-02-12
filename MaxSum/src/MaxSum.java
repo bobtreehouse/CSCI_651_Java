@@ -27,3 +27,11 @@ public class MaxSum {
 	}
 
 }
+/*
+ * 
+K = accumulates the total sum of the subsequence
+
+Zero (0) is often first term; last term is often Length -1
+
+THIS is O(N^3)
+ * */
