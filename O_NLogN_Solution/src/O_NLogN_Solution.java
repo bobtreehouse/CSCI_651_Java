@@ -1,18 +1,7 @@
 
 public class O_NLogN_Solution {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
-	
-	/*use recursion, split in half ; Divide N Conquer
-	 * 
-	 * */
-
-
-	public static int maxSumRec(int [] a, int left, int right){
+	static int maxSumRec(int [] a, int left, int right){
 		
 		if( left == right) // base case 
 			if( a[ left ] > 0)
@@ -22,10 +11,19 @@ public class O_NLogN_Solution {
 		
 		int center = (left + right) / 2;
 		
-		int maxLEftSum = maxSumRec ( a, left, center);
+		int maxLeftSum = maxSumRec ( a, left, center);
 		int maxRightSum = maxSumRec( a, center+1, right );
+		return maxRightSum;
+		 
+		
 	}
 	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 
+		
 	}
-
 }
+
+
+

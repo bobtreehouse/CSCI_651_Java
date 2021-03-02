@@ -26,8 +26,7 @@ public class O_N2_Solution {
 			}
 		}
 		return maxSum;
-		
-		
+				
 		
 	}
 

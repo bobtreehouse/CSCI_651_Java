@@ -1,11 +1,7 @@
 
 public class O_N_log_N {
-
-	public static void main(String[]args) {
-	}
 	
-	
-		public static int maxSumRec(int [] a, int left, int right) {
+		public static  int maxSumRec(int [] a, int left, int right) {
 			
 			if(left == right) // base case 
 				if(a [ left ] > 0)
@@ -16,11 +12,15 @@ public class O_N_log_N {
 			int center = (left + right) /2;
 			
 			int maxLeftSum = maxSumRec( a , left, center );
-			int maxRightSum = maxSumRec(a, center+1, right ); 
+			int maxRightSum = maxSumRec(a, center+1, right );
+			return maxRightSum; 
+			  
 		}
-		
-	}
+
 }
+ 
+ 
+ 
 
 
 
